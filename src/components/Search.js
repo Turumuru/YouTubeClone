@@ -3,11 +3,9 @@ import LayoutComponent from "./layout";
 import VideoListSearch from "./VideoListSearch"
 import axios from "axios";
 
-const API_KEY = 'AIzaSyBHbrsn5W1stF9w_86hbCDWjDAih3XvQC8';
+const API_KEY = 'KEY';
 
 function Search(video) {
-
-    // console.log(video.match.params.searchTerm);
 
     const [appState, setAppState] = useState(
         {
@@ -21,7 +19,7 @@ function Search(video) {
         const apiUrl = `https://www.googleapis.com/youtube/v3/search?part=snippet&q=${video.match.params.searchTerm}&maxResults=5&key=${API_KEY}`;
         axios.get(apiUrl).then((resp) => {
             const videos = resp.data.items;
-            console.log(videos);
+            // console.log(videos);
             setAppState({
                 loading: false,
                 videos: videos

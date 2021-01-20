@@ -6,12 +6,11 @@ import VideoDetail from './VideoDetail';
 import axios from "axios";
 import VideoList from "./VideoList";
 
-const API_KEY = 'AIzaSyBHbrsn5W1stF9w_86hbCDWjDAih3XvQC8';
+const API_KEY = 'KEY';
 
 function VideoDet(video) {
 
     const videoId = (video.match.url).split('/');
-    console.log(videoId);
 
     const [Video, SetVideoDetail] = useState(
         {
@@ -83,7 +82,6 @@ function VideoDet(video) {
 
 
     const VideoD = Video.videoDet;
-    // console.log(VideoD);
 
     if (VideoD) {
         return (

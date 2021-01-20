@@ -5,7 +5,7 @@ import CommentList from './CommentList'
 import VideoDetail from './VideoDetail';
 import axios from "axios";
 
-const API_KEY = 'AIzaSyBHbrsn5W1stF9w_86hbCDWjDAih3XvQC8';
+const API_KEY = 'KEY';
 
 function VideoDet(video) {
 
@@ -81,7 +81,6 @@ function VideoDet(video) {
 
 
     const VideoD = Video.videoDet;
-    // console.log(VideoD);
 
     if (VideoD) {
         return (

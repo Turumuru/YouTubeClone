@@ -4,8 +4,6 @@ const API_KEY = 'KEY';
 
 const CommentItem = ({video}) => {
 
-    console.log(video);
-
     const logo = video.snippet.topLevelComment.snippet.authorProfileImageUrl;
     const comm = video.snippet.topLevelComment.snippet.textOriginal;
     const name = video.snippet.topLevelComment.snippet.authorDisplayName;

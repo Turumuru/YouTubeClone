@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import axios from "axios";
 import {Link} from 'react-router-dom';
 
-const API_KEY = 'AIzaSyBHbrsn5W1stF9w_86hbCDWjDAih3XvQC8';
+const API_KEY = 'KEY';
 
 const VideoItemSearch = ({search, video}) => {
 
@@ -30,7 +30,6 @@ const VideoItemSearch = ({search, video}) => {
     const videoId = video.id.videoId;
     const sear = search;
     const videoIdIdsear = videoId + "/" + Id + "/" + sear;
-    // console.log(videoIdIdsear);
 
     const publishedDate = () => {
         if (undefined === video) {
@@ -47,7 +46,6 @@ const VideoItemSearch = ({search, video}) => {
     }
 
     if (video) return (
-
         <div style={{paddingBottom: '20px', display: 'flex', flexDirection: 'row'}}>
             <Link to={videoIdIdsear} style={{textDecoration: 'none', color: 'black'}}>
                 <img src={video.snippet.thumbnails.medium.url} alt=""/>

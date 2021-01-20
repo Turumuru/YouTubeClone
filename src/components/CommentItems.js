@@ -1,6 +1,6 @@
 import React from 'react';
 
-const API_KEY = 'AIzaSyBHbrsn5W1stF9w_86hbCDWjDAih3XvQC8';
+const API_KEY = 'KEY';
 
 const CommentItem = ({video}) => {
 

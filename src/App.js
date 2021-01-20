@@ -6,14 +6,6 @@ import VideoDet from './components/VideoDet';
 import Search from './components/Search';
 import VideoDetSearch from './components/VideoDetSearch';
 
-// import ReactDOM from "react-dom";
-// import {Route, Switch} from 'react-router-dom';
-// import Player from './components/Player';
-// import YTSearch from 'youtube-api-search';
-// import SearchBar from './components/SearchBar';
-// import VideoList from './components/VideoList';
-
-
 
 class App extends React.Component {
 

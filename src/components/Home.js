@@ -3,7 +3,7 @@ import LayoutComponent from "./layout";
 import VideoList from "./VideoList"
 import axios from "axios";
 
-const API_KEY = 'AIzaSyBHbrsn5W1stF9w_86hbCDWjDAih3XvQC8';
+const API_KEY = 'KEY';
 
 function Home() {
 
